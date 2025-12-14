@@ -1,6 +1,8 @@
-Sands - eleMas
-Goblet - eleMas
-Circlet - eleMas / critRate_* / critDMG_*
-1. enerRech_*
-2. eleMas
-3. critRate_ / critDMG_
+Sands - enerRech_ / atk_
+Goblet - atk_
+Circlet - heal_ / atk_ / critRate_
+1. enerRech_
+2. atk_
+3. critRate_
+4. eleMas
+5. flat_atk

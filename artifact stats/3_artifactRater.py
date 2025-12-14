@@ -8,8 +8,8 @@ TARGET_SCORE = 75.0  # The specific score threshold we want to check the probabi
 
 # --- Weight Definitions ---
 # 4 STAR PYRO
-amber_melt_dps = {"main_stats": {"sands": {"atk_": 1, "eleMas": 1}, "goblet": {"pyro_dmg_": 1}, "circlet": {"critDMG_": 1}}, "sub_stats": {"hp": 0, "hp_": 0, "def": 0, "def_": 0, "atk": 0.175, "atk_": 0.9, "enerRech_": 0, "eleMas": 0.8, "critRate_": 0, "critDMG_": 1.0}}
-amber_buff_support = {"main_stats": {"sands": {"enerRech_": 1, "atk_": 1}, "goblet": {"pyro_dmg_": 1}, "circlet": {"critRate_": 1, "critDMG_": 1}}, "sub_stats": {"hp": 0, "hp_": 0, "def": 0, "def_": 0, "atk": 0.15, "atk_": 0.8, "enerRech_": 1.0, "eleMas": 0.7, "critRate_": 0.9, "critDMG_": 0.9}}
+amber_melt_dps = {'main_stats': {'sands': {'atk_': 1, 'eleMas': 1}, 'goblet': {'pyro_dmg_': 1}, 'circlet': {'critDMG_': 1}}, 'sub_stats': {'hp': 0, 'hp_': 0, 'def': 0, 'def_': 0, 'atk': 0.175, 'atk_': 0.9, 'enerRech_': 0, 'eleMas': 0.8, 'critRate_': 0, 'critDMG_': 1.0}}
+amber_buff_support = {'main_stats': {'sands': {'enerRech_': 1, 'atk_': 1}, 'goblet': {'pyro_dmg_': 1}, 'circlet': {'critRate_': 1, 'critDMG_': 1}}, 'sub_stats': {'hp': 0, 'hp_': 0, 'def': 0, 'def_': 0, 'atk': 0.15, 'atk_': 0.8, 'enerRech_': 1.0, 'eleMas': 0.7, 'critRate_': 0.9, 'critDMG_': 0.9}}
 xiangling_offField_dps = {"main_stats": {"sands": {"enerRech_": 1, "atk_": 1, "eleMas": 1}, "goblet": {"pyro_dmg_": 1}, "circlet": {"critRate_": 1, "critDMG_": 1}}, "sub_stats": {"hp": 0, "hp_": 0, "def": 0, "def_": 0, "atk": 0.15, "atk_": 0.8, "enerRech_": 1.0, "eleMas": 0.7, "critRate_": 0.9, "critDMG_": 0.9}}
 bennett_support = {"main_stats": {"sands": {"enerRech_": 1, "atk_": 1, "hp_": 1}, "goblet": {"pyro_dmg_": 1, "hp_": 1}, "circlet": {"critRate_": 1, "critDMG_": 1, "hp_": 1, "heal_": 1}}, "sub_stats": {"hp": 0.2, "hp_": 0.9, "def": 0, "def_": 0, "atk": 0.175, "atk_": 0.8, "enerRech_": 1.0, "eleMas": 0, "critRate_": 0.9, "critDMG_": 0.9}}
 bennett_dps = {"main_stats": {"sands": {"atk_": 1, "eleMas": 1}, "goblet": {"pyro_dmg_": 1}, "circlet": {"critRate_": 1, "critDMG_": 1}}, "sub_stats": {"hp": 0, "hp_": 0, "def": 0, "def_": 0, "atk": 0.15, "atk_": 0.8, "enerRech_": 1.0, "eleMas": 0.7, "critRate_": 0.9, "critDMG_": 0.9}}
@@ -31,11 +31,13 @@ klee_dps = {"main_stats": {"sands": {"atk_": 1}, "goblet": {"pyro_dmg_": 1}, "ci
 hu_tao_dps = {"main_stats": {"sands": {"hp_": 1, "eleMas": 1}, "goblet": {"pyro_dmg_": 1}, "circlet": {"critRate_": 1, "critDMG_": 1}}, "sub_stats": {"hp": 0.15, "hp_": 0.8, "def": 0, "def_": 0, "atk": 0.125, "atk_": 0.7, "enerRech_": 0, "eleMas": 0.9, "critRate_": 1.0, "critDMG_": 1.0}}
 yoimiya_dps = {"main_stats": {"sands": {"atk_": 1, "eleMas": 1}, "goblet": {"pyro_dmg_": 1}, "circlet": {"critRate_": 1, "critDMG_": 1}}, "sub_stats": {"hp": 0, "hp_": 0, "def": 0, "def_": 0, "atk": 0.15, "atk_": 0.9, "enerRech_": 0.7, "eleMas": 0.8, "critRate_": 1.0, "critDMG_": 1.0}}
 dehya_onField_dps = {"main_stats": {"sands": {"atk_": 1, "enerRech_": 1}, "goblet": {"pyro_dmg_": 1}, "circlet": {"critRate_": 1, "critDMG_": 1}}, "sub_stats": {"hp": 0, "hp_": 0.6, "def": 0.1, "def_": 0, "atk": 0.125, "atk_": 0.8, "enerRech_": 1.0, "eleMas": 0.7, "critRate_": 0.9, "critDMG_": 0.9}}
-dehya_tank_support = {"main_stats": {"sands": {"hp_": 1}, "goblet": {"hp_": 1}, "circlet": {"hp_": 1, "critRate_": 1}}, "sub_stats": {"hp": 0.225, "hp_": 1.0, "def": 0, "def_": 0, "atk": 0.15, "atk_": 0.7, "enerRech_": 0, "eleMas": 0.8, "critRate_": 0, "critDMG_": 0}}
-dehya_burgeon = {"main_stats": {"sands": {"eleMas": 1}, "goblet": {"eleMas": 1}, "circlet": {"eleMas": 1}}, "sub_stats": {"hp": 0.2, "hp_": 0.9, "def": 0, "def_": 0, "atk": 0, "atk_": 0, "enerRech_": 0, "eleMas": 1.0, "critRate_": 0.7, "critDMG_": 0}}
+dehya_support = {"main_stats": {"sands": {"hp_": 1}, "goblet": {"hp_": 1}, "circlet": {"hp_": 1, "critRate_": 1}}, "sub_stats": {"hp": 0.225, "hp_": 1.0, "def": 0, "def_": 0, "atk": 0.15, "atk_": 0.7, "enerRech_": 0, "eleMas": 0.8, "critRate_": 0, "critDMG_": 0}}
+dehya_reaction_dps = {"main_stats": {"sands": {"eleMas": 1}, "goblet": {"eleMas": 1}, "circlet": {"eleMas": 1}}, "sub_stats": {"hp": 0.2, "hp_": 0.9, "def": 0, "def_": 0, "atk": 0, "atk_": 0, "enerRech_": 0, "eleMas": 1.0, "critRate_": 0.7, "critDMG_": 0}}
 lyney_dps = {"main_stats": {"sands": {"atk_": 1}, "goblet": {"pyro_dmg_": 1}, "circlet": {"critDMG_": 1}}, "sub_stats": {"hp": 0, "hp_": 0, "def": 0, "def_": 0, "atk": 0.175, "atk_": 0.9, "enerRech_": 0.8, "eleMas": 0, "critRate_": 1.0, "critDMG_": 1.0}}
 arlecchino_dps = {"main_stats": {"sands": {"atk_": 1, "eleMas": 1}, "goblet": {"pyro_dmg_": 1}, "circlet": {"critRate_": 1, "critDMG_": 1}}, "sub_stats": {"hp": 0, "hp_": 0, "def": 0, "def_": 0, "atk": 0.175, "atk_": 0.8, "enerRech_": 0, "eleMas": 0.9, "critRate_": 1.0, "critDMG_": 1.0}}
 mavuika_dps_and_buff_support = {"main_stats": {"sands": {"eleMas": 1, "atk_": 1}, "goblet": {"pyro_dmg_": 1}, "circlet": {"critRate_": 1, "critDMG_": 1}}, "sub_stats": {"hp": 0, "hp_": 0, "def": 0, "def_": 0, "atk": 0.175, "atk_": 0.9, "enerRech_": 0, "eleMas": 0.8, "critRate_": 1.0, "critDMG_": 1.0}}
+durin_vaporize_melt_offField_dps = {'main_stats': {'sands': {'atk_': 1}, 'goblet': {'pyro_dmg_': 1, 'atk_': 1}, 'circlet': {'critRate_': 1, 'critDMG_': 1}}, 'sub_stats': {'hp': 0, 'hp_': 0, 'def': 0, 'def_': 0, 'atk': 0.15, 'atk_': 0.9, 'enerRech_': 0.7, 'eleMas': 0.8, 'critRate_': 1.0, 'critDMG_': 1.0}}
+durin_buff_support_and_offField_dps = {'main_stats': {'sands': {'atk_': 1}, 'goblet': {'pyro_dmg_': 1, 'atk_': 1}, 'circlet': {'critRate_': 1, 'critDMG_': 1}}, 'sub_stats': {'hp': 0, 'hp_': 0, 'def': 0, 'def_': 0, 'atk': 0.175, 'atk_': 0.9, 'enerRech_': 0.8, 'eleMas': 0, 'critRate_': 1.0, 'critDMG_': 1.0}}
 # 4 STAR ELECTRO
 fischl_offField_dps = {"main_stats": {"sands": {"atk_": 1}, "goblet": {"electro_dmg_": 1}, "circlet": {"critRate_": 1, "critDMG_": 1}}, "sub_stats": {"hp": 0, "hp_": 0, "def": 0, "def_": 0, "atk": 0.15, "atk_": 0.8, "enerRech_": 1.0, "eleMas": 0.7, "critRate_": 0.9, "critDMG_": 0.9}}
 fischl_offField_aggravate_dps = {"main_stats": {"sands": {"atk_": 1, "eleMas": 1}, "goblet": {"electro_dmg_": 1}, "circlet": {"critRate_": 1, "critDMG_": 1}}, "sub_stats": {"hp": 0, "hp_": 0, "def": 0, "def_": 0, "atk": 0.175, "atk_": 0.8, "enerRech_": 1.0, "eleMas": 0.8, "critRate_": 0.9, "critDMG_": 0.9}}
@@ -66,6 +68,7 @@ cyno_aggravate_dps = {"main_stats": {"sands": {"eleMas": 1, "atk_": 1}, "goblet"
 clorinde_dps = {"main_stats": {"sands": {"atk_": 1, "eleMas": 1}, "goblet": {"electro_dmg_": 1}, "circlet": {"critRate_": 1, "critDMG_": 1}}, "sub_stats": {"hp": 0, "hp_": 0, "def": 0, "def_": 0, "atk": 0.15, "atk_": 0.9, "enerRech_": 0.7, "eleMas": 0.8, "critRate_": 1.0, "critDMG_": 1.0}}
 varesa_dps = {"main_stats": {"sands": {"atk_": 1}, "goblet": {"electro_dmg_": 1}, "circlet": {"critRate_": 1, "critDMG_": 1}}, "sub_stats": {"hp": 0, "hp_": 0, "def": 0, "def_": 0, "atk": 0.15, "atk_": 0.8, "enerRech_": 1.0, "eleMas": 0.7, "critRate_": 0.9, "critDMG_": 0.9}}
 ineffa_offField_dps_support = {"main_stats": {"sands": {"atk_": 1, "enerRech_": 1}, "goblet": {"atk_": 1}, "circlet": {"critRate_": 1, "critDMG_": 1}}, "sub_stats": {"hp": 0, "hp_": 0, "def": 0, "def_": 0, "atk": 0.175, "atk_": 0.8, "enerRech_": 1.0, "eleMas": 0.8, "critRate_": 0.9, "critDMG_": 0.9}}
+flins_dps = {'main_stats': {'sands': {'atk_': 1}, 'goblet': {'atk_': 1}, 'circlet': {'critRate_': 1, 'critDMG_': 1}}, 'sub_stats': {'hp': 0, 'hp_': 0, 'def': 0, 'def_': 0, 'atk': 0.175, 'atk_': 0.8, 'enerRech_': 1.0, 'eleMas': 0.8, 'critRate_': 0.9, 'critDMG_': 0.9}}
 # 4 STAR DENDRO
 collei_support = {"main_stats": {"sands": {"enerRech_": 1, "atk_": 1, "eleMas": 1}, "goblet": {"dendro_dmg_": 1, "eleMas": 1}, "circlet": {"critRate_": 1, "critDMG_": 1, "eleMas": 1}}, "sub_stats": {"hp": 0, "hp_": 0, "def": 0, "def_": 0, "atk": 0.175, "atk_": 0.8, "enerRech_": 1.0, "eleMas": 0.8, "critRate_": 0.9, "critDMG_": 0.9}}
 yaoyao_support = {"main_stats": {"sands": {"hp_": 1, "enerRech_": 1}, "goblet": {"hp_": 1}, "circlet": {"heal_": 1}}, "sub_stats": {"hp": 0.175, "hp_": 0.9, "def": 0, "def_": 0, "atk": 0, "atk_": 0, "enerRech_": 1.0, "eleMas": 0, "critRate_": 0.8, "critDMG_": 0,}}
@@ -81,6 +84,7 @@ emilie_offField_dps = {"main_stats": {"sands": {"atk_": 1}, "goblet": {"dendro_d
 kinich_dps = {"main_stats": {"sands": {"atk_": 1}, "goblet": {"dendro_dmg_": 1}, "circlet": {"critRate_": 1, "critDMG_": 1}}, "sub_stats": {"hp": 0, "hp_": 0, "def": 0, "def_": 0, "atk": 0.175, "atk_": 0.9, "enerRech_": 0.8, "eleMas": 0, "critRate_": 1.0, "critDMG_": 1.0}}
 lauma_buff_support_high_energy = {"main_stats": {"sands": {"enerRech_": 1, "eleMas": 1}, "goblet": {"eleMas": 1}, "circlet": {"eleMas": 1}}, "sub_stats": {"hp": 0, "hp_": 0, "def": 0, "def_": 0, "atk": 0, "atk_": 0, "enerRech_": 1.0, "eleMas": 0.9, "critRate_": 0.8, "critDMG_": 0.8}}
 lauma_buff_support_low_energy = {"main_stats": {"sands": {"eleMas": 1}, "goblet": {"eleMas": 1}, "circlet": {"eleMas": 1, "critRate_": 1, "critDMG_": 1}}, "sub_stats": {"hp": 0, "hp_": 0, "def": 0, "def_": 0, "atk": 0, "atk_": 0, "enerRech_": 1.0, "eleMas": 0.9, "critRate_": 0.8, "critDMG_": 0.8}}
+nefer_dps = {'main_stats': {'sands': {'eleMas': 1}, 'goblet': {'eleMas': 1}, 'circlet': {'critRate_': 1, 'critDMG_': 1}}, 'sub_stats': {'hp': 0, 'hp_': 0, 'def': 0, 'def_': 0, 'atk': 0, 'atk_': 0, 'enerRech_': 0, 'eleMas': 0.9, 'critRate_': 1.0, 'critDMG_': 1.0}}
 # 4 STAR HYDRO
 xingqiu_offField_dps = {"main_stats": {"sands": {"enerRech_": 1, "atk_": 1}, "goblet": {"hydro_dmg_": 1}, "circlet": {"critRate_": 1, "critDMG_": 1}}, "sub_stats": {"hp": 0, "hp_": 0, "def": 0, "def_": 0, "atk": 0.15, "atk_": 0.9, "enerRech_": 0.8, "eleMas": 0.7, "critRate_": 1.0, "critDMG_": 1.0}}
 barbara_support = {"main_stats": {"sands": {"hp_": 1}, "goblet": {"hp_": 1}, "circlet": {"heal_": 1}}, "sub_stats": {"hp": 0.225, "hp_": 1.0, "def": 0, "def_": 0, "atk": 0, "atk_": 0, "enerRech_": 0, "eleMas": 0, "critRate_": 0, "critDMG_": 0}}
@@ -145,6 +149,7 @@ lan_yan_support = {"main_stats": {"sands": {"atk_": 1, "enerRech_": 1}, "goblet"
 lan_yan_driver = {"main_stats": {"sands": {"eleMas": 1, "atk_": 1, "enerRech_": 1}, "goblet": {"eleMas": 1, "atk_": 1}, "circlet": {"eleMas": 1, "atk_": 1, "critRate_": 1}}, "sub_stats": {"hp": 0, "hp_": 0, "def": 0, "def_": 0, "atk": 0.15, "atk_": 0.9, "enerRech_": 1.0, "eleMas": 0.8, "critRate_": 0.7, "critDMG_": 0}}
 ifa_reaction_dps = {"main_stats": {"sands": {"eleMas": 1, "enerRech_": 1}, "goblet": {"eleMas": 1}, "circlet": {"eleMas": 1}}, "sub_stats": {"hp": 0, "hp_": 0, "def": 0, "def_": 0, "atk": 0.15, "atk_": 0.8, "enerRech_": 1.0, "eleMas": 0.9, "critRate_": 0.7, "critDMG_": 0.7}}
 ifa_anemo_dps = {"main_stats": {"sands": {"atk_": 1}, "goblet": {"anemo_dmg_": 1}, "circlet": {"critRate_": 1, "critDMG_": 1}}, "sub_stats": {"hp": 0, "hp_": 0, "def": 0, "def_": 0, "atk": 0.15, "atk_": 0.9, "enerRech_": 0.7, "eleMas": 0.8, "critRate_": 1.0, "critDMG_": 1.0}}
+jahoda_offField_reaction_dps_and_heal_support = {'main_stats': {'sands': {'enerRech_': 1, 'atk_': 1}, 'goblet': {'atk_': 1}, 'circlet': {'heal_': 1, 'atk_': 1, 'critRate_': 1}}, 'sub_stats': {'hp': 0, 'hp_': 0, 'def': 0, 'def_': 0, 'atk': 0.15, 'atk_': 0.9, 'enerRech_': 1.0, 'eleMas': 0.7, 'critRate_': 0.8, 'critDMG_': 0}}
 # 5 STAR ANEMO
 anemo_traveler_anemo_dps = {"main_stats": {"sands": {"eleMas": 1, "atk_": 1, "enerRech_": 1}, "goblet": {"eleMas": 1, "anemo_dmg_": 1}, "circlet": {"eleMas": 1, "critRate_": 1, "critDMG_": 1}}, "sub_stats": {"hp": 0, "hp_": 0, "def": 0, "def_": 0, "atk": 0.15, "atk_": 0.8, "enerRech_": 0.9, "eleMas": 1.0, "critRate_": 0.7, "critDMG_": 0.7}}
 jean_support_and_damage = {"main_stats": {"sands": {"atk_": 1, "enerRech_": 1}, "goblet": {"anemo_dmg_": 1, "atk_": 1}, "circlet": {"critRate_": 1, "critDMG_": 1, "heal_": 1}}, "sub_stats": {"hp": 0, "hp_": 0, "def": 0, "def_": 0, "atk": 0.15, "atk_": 0.8, "enerRech_": 1.0, "eleMas": 0.7, "critRate_": 0.9, "critDMG_": 0.9}}
@@ -186,53 +191,69 @@ except FileNotFoundError:
 csv_headers = [
     'Level', 'Set', 'Slot', 'Stars', 'Main Stat', 'Main Stat Value', 'Sub Stat 1', 'Sub Stat Value 1', 'Sub Stat 2',
     'Sub Stat Value 2', 'Sub Stat 3', 'Sub Stat Value 3', 'Sub Stat 4', 'Sub Stat Value 4', 'max',
+    # 4 Star Pyro
     'amber melt dps score', 'amber buff support score', 'xiangling offField dps score', 'bennett dps score',
     'bennett support score', 'xinyan physical dps score', 'xinyan pyro dps score', 'xinyan shield support score',
     'yanfei vaporize dps score', 'yanfei shield support score', 'thoma burgeon score', 'thoma shield support score',
     'chevreuse buff support score', 'chevreuse buff support and damage score', 'gaming dps score',
+    # 5 Star Pyro
     'pyro traveler buff support score', 'pyro traveler dps score', 'diluc dps score', 'klee dps score',
-    'hu tao dps score', 'yoimiya dps score', 'dehya onField dps score', 'dehya tank support score',
-    'dehya burgeon score', 'lyney dps score', 'arlecchino dps score', 'mavuika dps and buff support score',
+    'hu tao dps score', 'yoimiya dps score', 'dehya onField dps score', 'dehya support score',
+    'dehya reaction dps score', 'lyney dps score', 'arlecchino dps score', 'mavuika dps and buff support score',
+    'durin vaporize melt offField dps score', 'durin buff support and offField dps score',
+    # 4 Star Electro
     'fischl offField dps score', 'fischl offField aggravate dps score', 'beidou offField dps score',
     'lisa aggravate dps score', 'lisa offField dps score', 'lisa reaction dps score',
     'razor hyperbloom reaction dps score', 'razor physical dps score', 'kujou sara buff support and damage score',
     'kuki shinobu hyperbloom score', 'kuki shinobu aggravate offField dps score', 'kuki shinobu support score',
     'dori support score', 'sethos dps score', 'ororon offField dps score', 'iansan buff support score',
+    # 5 Star Electro
     'electro traveler support score', 'keqing aggravate dps score', 'keqing quickbloom dps score',
     'raiden shogun hyperbloom score', 'raiden shogun dps score', 'yae miko offField dps score',
     'yae miko offField aggravate dps score', 'cyno quickbloom hyperbloom dps score', 'cyno aggravate dps score',
-    'clorinde dps score', 'varesa dps score', 'ineffa offField dps support score',
+    'clorinde dps score', 'varesa dps score', 'ineffa offField dps support score', 'flins dps score',
+    # 4 Star Hydro
     'xingqiu offField dps score', 'barbara support score', 'barbara bloom dps score', 'candace support score',
     'dahlia shield support score', 'aino application support score',
+    # 5 Star Hydro
     'hydro traveler support score', 'hydro traveler onField dps', 'tartaglia dps score', 'mona dps score',
     'mona nuke score', 'mona burst support score', 'sangonomiya kokomi support score', 'sangonomiya kokomi dps score',
     'sangonomiya kokomi bloom dps score', 'kamisato ayato dps score', 'yelan offField dps score',
     'nilou bloom support score', 'neuvillette dps score', 'furina offField dps score', 'sigewinne support score',
     'mualani vaporize dps score',
+    # 4 Star Cryo
     'diona support score', 'chongyun burst nuke score', 'chongyun infusion support score', 'kaeya freeze score',
     'kaeya reverse melt score', 'rosaria reverse melt score', 'rosaria freeze score', 'rosaria support score',
     'layla support score', 'layla support and damage score', 'mika support score', 'freminet physical dps score',
     'freminet cryo dps score', 'charlotte support score',
+    # 5 Star Cryo
     'qiqi support score', 'ganyu melt dps score', 'ganyu freeze dps score', 'ganyu mono cryo dps score',
     'eula dps score', 'kamisato ayaka dps score', 'aloy burst support score', 'shenhe support score',
     'wriothesley melt dps score', 'wriothesley mono cryo freeze dps score', 'citlali support score',
     'escoffier offField dps score', 'skirk dps score',
+    # 4 Star Anemo
     'sucrose em support score', 'sayu support score', 'shikanoin heizou anemo dps score',
     'shikanoin heizou reaction dps score', 'faruzan support score', 'lynette offField dps score',
     'lan yan support score', 'lan yan driver score', 'ifa reaction dps score', 'ifa anemo dps score',
+    'jahoda offField reaction dps and heal support score'
+    # 5 Star Anemo
     'anemo traveler anemo dps score', 'jean support and damage score', 'jean reaction dps score',
     'venti reaction offField dps score', 'venti anemo offField dps score', 'xiao dps score',
     'kaedehara kazuha reaction dps and support score', 'wanderer dps score', 'xianyun support score',
     'chasca dps score', 'yumemizuki mizuki reaction dps score',
+    # 4 Star Geo
     'ningguang dps score', 'noelle dps score', 'noelle driver score', 'gorou support score', 'yun jin support score',
     'kachina support and offField dps score',
+    # 5 Star Geo
     'geo traveler geo dps score', 'zhongli shield support score', 'zhongli burst support score',
     'albedo offField dps score', 'arataki itto dps score', 'navia dps score', 'chiori offField dps score',
     'xilonen support score',
+    # 4 Star Dendro
     'collei support score', 'yaoyao support score', 'kaveh bloom burgeon driver score', 'kirara shield support score',
+    # 5 Star Dendro
     'dendro traveler support score', 'tighnari quick swap dps score', 'nahida dps and support score',
     'alhaitham spread dps score', 'baizhu support score', 'emilie offField dps score', 'kinich dps score',
-    'lauma buff support high energy score', 'lauma buff support low energy score'
+    'lauma buff support high energy score', 'lauma buff support low energy score', 'nefer dps score'
 ]
 
 with open('artifacts.csv', 'w', newline='') as outputFile:
@@ -261,6 +282,7 @@ with open('artifacts.csv', 'w', newline='') as outputFile:
         current_main_val = sim.MAX_MAINS.get(rarity, sim.MAX_MAINS[5]).get(key, 0)
 
         # --- Simulation ---
+        # 4 Star Pyro
         amber_melt_dps_value = sim.calculate_exact_probability(a, amber_melt_dps)
         amber_buff_support_value = sim.calculate_exact_probability(a, amber_buff_support)
         xiangling_offField_dps_value = sim.calculate_exact_probability(a, xiangling_offField_dps)
@@ -276,6 +298,7 @@ with open('artifacts.csv', 'w', newline='') as outputFile:
         chevreuse_buff_support_value = sim.calculate_exact_probability(a, chevreuse_buff_support)
         chevreuse_buff_support_and_damage_value = sim.calculate_exact_probability(a, chevreuse_buff_support_and_damage)
         gaming_dps_value = sim.calculate_exact_probability(a, gaming_dps)
+        # 5 Star Pyro
         pyro_traveler_buff_support_value = sim.calculate_exact_probability(a, pyro_traveler_buff_support)
         pyro_traveler_dps_value = sim.calculate_exact_probability(a, pyro_traveler_dps)
         diluc_dps_value = sim.calculate_exact_probability(a, diluc_dps)
@@ -283,11 +306,14 @@ with open('artifacts.csv', 'w', newline='') as outputFile:
         hu_tao_dps_value = sim.calculate_exact_probability(a, hu_tao_dps)
         yoimiya_dps_value = sim.calculate_exact_probability(a, yoimiya_dps)
         dehya_onField_dps_value = sim.calculate_exact_probability(a, dehya_onField_dps)
-        dehya_tank_support_value = sim.calculate_exact_probability(a, dehya_tank_support)
-        dehya_burgeon_value = sim.calculate_exact_probability(a, dehya_burgeon)
+        dehya_support_value = sim.calculate_exact_probability(a, dehya_support)
+        dehya_reaction_dps_value = sim.calculate_exact_probability(a, dehya_reaction_dps)
         lyney_dps_value = sim.calculate_exact_probability(a, lyney_dps)
         arlecchino_dps_value = sim.calculate_exact_probability(a, arlecchino_dps)
         mavuika_dps_and_buff_support_value = sim.calculate_exact_probability(a, mavuika_dps_and_buff_support)
+        durin_vaporize_melt_offField_dps_value = sim.calculate_exact_probability(a, durin_vaporize_melt_offField_dps)
+        durin_buff_support_and_offField_dps_value = sim.calculate_exact_probability(a, durin_buff_support_and_offField_dps)
+        # 4 Star Electro
         fischl_offField_dps_value = sim.calculate_exact_probability(a, fischl_offField_dps)
         fischl_offField_aggravate_dps_value = sim.calculate_exact_probability(a, fischl_offField_aggravate_dps)
         beidou_offField_dps_value = sim.calculate_exact_probability(a, beidou_offField_dps)
@@ -304,6 +330,7 @@ with open('artifacts.csv', 'w', newline='') as outputFile:
         sethos_dps_value = sim.calculate_exact_probability(a, sethos_dps)
         ororon_offField_dps_value = sim.calculate_exact_probability(a, ororon_offField_dps)
         iansan_buff_support_value = sim.calculate_exact_probability(a, iansan_buff_support)
+        # 5 Star Electro
         electro_traveler_support_value = sim.calculate_exact_probability(a, electro_traveler_support)
         keqing_aggravate_dps_value = sim.calculate_exact_probability(a, keqing_aggravate_dps)
         keqing_quickbloom_dps_value = sim.calculate_exact_probability(a, keqing_quickbloom_dps)
@@ -316,10 +343,13 @@ with open('artifacts.csv', 'w', newline='') as outputFile:
         clorinde_dps_value = sim.calculate_exact_probability(a, clorinde_dps)
         varesa_dps_value = sim.calculate_exact_probability(a, varesa_dps)
         ineffa_offField_dps_support_value = sim.calculate_exact_probability(a, ineffa_offField_dps_support)
+        flins_dps_value = sim.calculate_exact_probability(a, flins_dps)
+        # 4 Star Dendro
         collei_support_value = sim.calculate_exact_probability(a, collei_support)
         yaoyao_support_value = sim.calculate_exact_probability(a, yaoyao_support)
         kaveh_bloom_burgeon_driver_value = sim.calculate_exact_probability(a, kaveh_bloom_burgeon_driver)
         kirara_shield_support_value = sim.calculate_exact_probability(a, kirara_shield_support)
+        # 5 Star Dendro
         dendro_traveler_support_value = sim.calculate_exact_probability(a, dendro_traveler_support)
         tighnari_quick_swap_dps_value = sim.calculate_exact_probability(a, tighnari_quick_swap_dps)
         nahida_dps_and_support_value = sim.calculate_exact_probability(a, nahida_dps_and_support)
@@ -329,12 +359,15 @@ with open('artifacts.csv', 'w', newline='') as outputFile:
         kinich_dps_value = sim.calculate_exact_probability(a, kinich_dps)
         lauma_buff_support_high_energy_value = sim.calculate_exact_probability(a, lauma_buff_support_high_energy)
         lauma_buff_support_low_energy_value = sim.calculate_exact_probability(a, lauma_buff_support_low_energy)
+        nefer_dps_value = sim.calculate_exact_probability(a, nefer_dps)
+        # 4 Star Hydro
         xingqiu_offField_dps_value = sim.calculate_exact_probability(a, xingqiu_offField_dps)
         barbara_support_value = sim.calculate_exact_probability(a, barbara_support)
         barbara_bloom_dps_value = sim.calculate_exact_probability(a, barbara_bloom_dps)
         candace_support_value = sim.calculate_exact_probability(a, candace_support)
         dahlia_shield_support_value = sim.calculate_exact_probability(a, dahlia_shield_support)
         aino_application_support_value = sim.calculate_exact_probability(a, aino_application_support)
+        # 5 Star Hydro
         hydro_traveler_support_value = sim.calculate_exact_probability(a, hydro_traveler_support)
         hydro_traveler_onField_dps_value = sim.calculate_exact_probability(a, hydro_traveler_onField_dps)
         tartaglia_dps_value = sim.calculate_exact_probability(a, tartaglia_dps)
@@ -388,6 +421,7 @@ with open('artifacts.csv', 'w', newline='') as outputFile:
         lan_yan_driver_value = sim.calculate_exact_probability(a, lan_yan_driver)
         ifa_reaction_dps_value = sim.calculate_exact_probability(a, ifa_reaction_dps)
         ifa_anemo_dps_value = sim.calculate_exact_probability(a, ifa_anemo_dps)
+        jahoda_offField_reaction_dps_and_heal_support_value = sim.calculate_exact_probability(a, jahoda_offField_reaction_dps_and_heal_support)
         anemo_traveler_anemo_dps_value = sim.calculate_exact_probability(a, anemo_traveler_anemo_dps)
         jean_support_and_damage_value = sim.calculate_exact_probability(a, jean_support_and_damage)
         jean_reaction_dps_value = sim.calculate_exact_probability(a, jean_reaction_dps)
@@ -436,11 +470,13 @@ with open('artifacts.csv', 'w', newline='') as outputFile:
         hu_tao_dps_score = sim.get_probability_greater_than(hu_tao_dps_value, TARGET_SCORE)
         yoimiya_dps_score = sim.get_probability_greater_than(yoimiya_dps_value, TARGET_SCORE)
         dehya_onField_dps_score = sim.get_probability_greater_than(dehya_onField_dps_value, TARGET_SCORE)
-        dehya_tank_support_score = sim.get_probability_greater_than(dehya_tank_support_value, TARGET_SCORE)
-        dehya_burgeon_score = sim.get_probability_greater_than(dehya_burgeon_value, TARGET_SCORE)
+        dehya_support_score = sim.get_probability_greater_than(dehya_support_value, TARGET_SCORE)
+        dehya_reaction_dps_score = sim.get_probability_greater_than(dehya_reaction_dps_value, TARGET_SCORE)
         lyney_dps_score = sim.get_probability_greater_than(lyney_dps_value, TARGET_SCORE)
         arlecchino_dps_score = sim.get_probability_greater_than(arlecchino_dps_value, TARGET_SCORE)
         mavuika_dps_and_buff_support_score = sim.get_probability_greater_than(mavuika_dps_and_buff_support_value, TARGET_SCORE)
+        durin_vaporize_melt_offField_dps_score = sim.get_probability_greater_than(durin_vaporize_melt_offField_dps_value, TARGET_SCORE)
+        durin_buff_support_and_offField_dps_score = sim.get_probability_greater_than(durin_buff_support_and_offField_dps_value, TARGET_SCORE)
         fischl_offField_dps_score = sim.get_probability_greater_than(fischl_offField_dps_value, TARGET_SCORE)
         fischl_offField_aggravate_dps_score = sim.get_probability_greater_than(fischl_offField_aggravate_dps_value, TARGET_SCORE)
         beidou_offField_dps_score = sim.get_probability_greater_than(beidou_offField_dps_value, TARGET_SCORE)
@@ -469,6 +505,7 @@ with open('artifacts.csv', 'w', newline='') as outputFile:
         clorinde_dps_score = sim.get_probability_greater_than(clorinde_dps_value, TARGET_SCORE)
         varesa_dps_score = sim.get_probability_greater_than(varesa_dps_value, TARGET_SCORE)
         ineffa_offField_dps_support_score = sim.get_probability_greater_than(ineffa_offField_dps_support_value, TARGET_SCORE)
+        flins_dps_score = sim.get_probability_greater_than(flins_dps_value, TARGET_SCORE)
         collei_support_score = sim.get_probability_greater_than(collei_support_value, TARGET_SCORE)
         yaoyao_support_score = sim.get_probability_greater_than(yaoyao_support_value, TARGET_SCORE)
         kaveh_bloom_burgeon_driver_score = sim.get_probability_greater_than(kaveh_bloom_burgeon_driver_value, TARGET_SCORE)
@@ -482,6 +519,7 @@ with open('artifacts.csv', 'w', newline='') as outputFile:
         kinich_dps_score = sim.get_probability_greater_than(kinich_dps_value, TARGET_SCORE)
         lauma_buff_support_high_energy_score = sim.get_probability_greater_than(lauma_buff_support_high_energy_value, TARGET_SCORE)
         lauma_buff_support_low_energy_score = sim.get_probability_greater_than(lauma_buff_support_low_energy_value, TARGET_SCORE)
+        nefer_dps_score = sim.get_probability_greater_than(nefer_dps_value, TARGET_SCORE)
         xingqiu_offField_dps_score = sim.get_probability_greater_than(xingqiu_offField_dps_value, TARGET_SCORE)
         barbara_support_score = sim.get_probability_greater_than(barbara_support_value, TARGET_SCORE)
         barbara_bloom_dps_score = sim.get_probability_greater_than(barbara_bloom_dps_value, TARGET_SCORE)
@@ -541,6 +579,7 @@ with open('artifacts.csv', 'w', newline='') as outputFile:
         lan_yan_driver_score = sim.get_probability_greater_than(lan_yan_driver_value, TARGET_SCORE)
         ifa_reaction_dps_score = sim.get_probability_greater_than(ifa_reaction_dps_value, TARGET_SCORE)
         ifa_anemo_dps_score = sim.get_probability_greater_than(ifa_anemo_dps_value, TARGET_SCORE)
+        jahoda_offField_reaction_dps_and_heal_support_score = sim.get_probability_greater_than(jahoda_offField_reaction_dps_and_heal_support_value, TARGET_SCORE)
         anemo_traveler_anemo_dps_score = sim.get_probability_greater_than(anemo_traveler_anemo_dps_value, TARGET_SCORE)
         jean_support_and_damage_score = sim.get_probability_greater_than(jean_support_and_damage_value, TARGET_SCORE)
         jean_reaction_dps_score = sim.get_probability_greater_than(jean_reaction_dps_value, TARGET_SCORE)
@@ -577,157 +616,162 @@ with open('artifacts.csv', 'w', newline='') as outputFile:
             'Main Stat': a.get('mainStatKey', ''),
             'Main Stat Value': current_main_val,
             'amber melt dps score': amber_melt_dps_score,
-           'amber buff support score': amber_buff_support_score,
-           'xiangling offField dps score': xiangling_offField_dps_score,
-           'bennett dps score': bennett_dps_score,
-           'bennett support score': bennett_support_score,
-           'xinyan physical dps score': xinyan_physical_dps_score,
-           'xinyan pyro dps score': xinyan_pyro_dps_score,
-           'xinyan shield support score': xinyan_shield_support_score,
-           'yanfei vaporize dps score': yanfei_vaporize_dps_score,
-           'yanfei shield support score': yanfei_shield_support_score,
-           'thoma burgeon score': thoma_burgeon_score,
-           'thoma shield support score': thoma_shield_support_score,
-           'chevreuse buff support score': chevreuse_buff_support_score,
-           'chevreuse buff support and damage score': chevreuse_buff_support_and_damage_score,
-           'gaming dps score': gaming_dps_score,
-           'pyro traveler buff support score': pyro_traveler_buff_support_score,
-           'pyro traveler dps score': pyro_traveler_dps_score,
-           'diluc dps score': diluc_dps_score,
-           'klee dps score': klee_dps_score,
-           'hu tao dps score': hu_tao_dps_score,
-           'yoimiya dps score': yoimiya_dps_score,
-           'dehya onField dps score': dehya_onField_dps_score,
-           'dehya tank support score': dehya_tank_support_score,
-           'dehya burgeon score': dehya_burgeon_score,
-           'lyney dps score': lyney_dps_score,
-           'arlecchino dps score': arlecchino_dps_score,
-           'mavuika dps and buff support score': mavuika_dps_and_buff_support_score,
-           'fischl offField dps score': fischl_offField_dps_score,
-           'fischl offField aggravate dps score': fischl_offField_aggravate_dps_score,
-           'beidou offField dps score': beidou_offField_dps_score,
-           'lisa aggravate dps score': lisa_aggravate_dps_score,
-           'lisa offField dps score': lisa_offField_dps_score,
-           'lisa reaction dps score': lisa_reaction_dps_score,
-           'razor hyperbloom reaction dps score': razor_hyperbloom_reaction_dps_score,
-           'razor physical dps score': razor_physical_dps_score,
-           'kujou sara buff support and damage score': kujou_sara_buff_support_and_damage_score,
-           'kuki shinobu hyperbloom score': kuki_shinobu_hyperbloom_score,
-           'kuki shinobu aggravate offField dps score': kuki_shinobu_aggravate_offField_dps_score,
-           'kuki shinobu support score': kuki_shinobu_support_score,
-           'dori support score': dori_support_score,
-           'sethos dps score': sethos_dps_score,
-           'ororon offField dps score': ororon_offField_dps_score,
-           'iansan buff support score': iansan_buff_support_score,
-           'electro traveler support score': electro_traveler_support_score,
-           'keqing aggravate dps score': keqing_aggravate_dps_score,
-           'keqing quickbloom dps score': keqing_quickbloom_dps_score,
-           'raiden shogun hyperbloom score': raiden_shogun_hyperbloom_score,
-           'raiden shogun dps score': raiden_shogun_dps_score,
-           'yae miko offField dps score': yae_miko_offField_dps_score,
-           'yae miko offField aggravate dps score': yae_miko_offField_aggravate_dps_score,
-           'cyno quickbloom hyperbloom dps score': cyno_quickbloom_hyperbloom_dps_score,
-           'cyno aggravate dps score': cyno_aggravate_dps_score,
-           'clorinde dps score': clorinde_dps_score,
-           'varesa dps score': varesa_dps_score,
-           'ineffa offField dps support score': ineffa_offField_dps_support_score,
-           'xingqiu offField dps score': xingqiu_offField_dps_score,
-           'barbara support score': barbara_support_score,
-           'barbara bloom dps score': barbara_bloom_dps_score,
-           'candace support score': candace_support_score,
-           'dahlia shield support score': dahlia_shield_support_score,
-           "aino application support score": aino_application_support_score,
-           'hydro traveler support score': hydro_traveler_support_score,
-           'hydro traveler onField dps': hydro_traveler_onField_dps_score,
-           'tartaglia dps score': tartaglia_dps_score,
-           'mona dps score': mona_dps_score,
-           'mona nuke score': mona_nuke_score,
-           'mona burst support score': mona_burst_support_score,
-           'sangonomiya kokomi support score': sangonomiya_kokomi_support_score,
-           'sangonomiya kokomi dps score': sangonomiya_kokomi_dps_score,
-           'sangonomiya kokomi bloom dps score': sangonomiya_kokomi_bloom_dps_score,
-           'kamisato ayato dps score': kamisato_ayato_dps_score,
-           'yelan offField dps score': yelan_offField_dps_score,
-           'nilou bloom support score': nilou_bloom_support_score,
-           'neuvillette dps score': neuvillette_dps_score,
-           'furina offField dps score': furina_offField_dps_score,
-           'sigewinne support score': sigewinne_support_score,
-           'mualani vaporize dps score': mualani_vaporize_dps_score,
-           'diona support score': diona_support_score,
-           'chongyun burst nuke score': chongyun_burst_nuke_score,
-           'chongyun infusion support score': chongyun_infusion_support_score,
-           'kaeya freeze score': kaeya_freeze_score,
-           'kaeya reverse melt score': kaeya_reverse_melt_score,
-           'rosaria reverse melt score': rosaria_reverse_melt_score,
-           'rosaria freeze score': rosaria_freeze_score,
-           'rosaria support score': rosaria_support_score,
-           'layla support score': layla_support_score,
-           'layla support and damage score': layla_support_and_damage_score,
-           'mika support score': mika_support_score,
-           'freminet physical dps score': freminet_physical_dps_score,
-           'freminet cryo dps score': freminet_cryo_dps_score,
-           'charlotte support score': charlotte_support_score,
-           'qiqi support score': qiqi_support_score,
-           'ganyu melt dps score': ganyu_melt_dps_score,
-           'ganyu freeze dps score': ganyu_freeze_dps_score,
-           'ganyu mono cryo dps score': ganyu_mono_cryo_dps_score,
-           'eula dps score': eula_dps_score,
-           'kamisato ayaka dps score': kamisato_ayaka_dps_score,
-           'aloy burst support score': aloy_burst_support_score,
-           'shenhe support score': shenhe_support_score,
-           'wriothesley melt dps score': wriothesley_melt_dps_score,
-           'wriothesley mono cryo freeze dps score': wriothesley_mono_cryo_freeze_dps_score,
-           'citlali support score': citlali_support_score,
-           'escoffier offField dps score': escoffier_offField_dps_score,
-           'skirk dps score': skirk_dps_score,
-           'sucrose em support score': sucrose_em_support_score,
-           'sayu support score': sayu_support_score,
-           'shikanoin heizou anemo dps score': shikanoin_heizou_anemo_dps_score,
-           'shikanoin heizou reaction dps score': shikanoin_heizou_reaction_dps_score,
-           'faruzan support score': faruzan_support_score,
-           'lynette offField dps score': lynette_offField_dps_score,
-           'lan yan support score': lan_yan_support_score,
-           'lan yan driver score': lan_yan_driver_score,
-           'ifa reaction dps score': ifa_reaction_dps_score,
-           'ifa anemo dps score': ifa_anemo_dps_score,
-           'anemo traveler anemo dps score': anemo_traveler_anemo_dps_score,
-           'jean support and damage score': jean_support_and_damage_score,
-           'jean reaction dps score': jean_reaction_dps_score,
-           'venti reaction offField dps score': venti_reaction_offField_dps_score,
-           'venti anemo offField dps score': venti_anemo_offField_dps_score,
-           'xiao dps score': xiao_dps_score,
-           'kaedehara kazuha reaction dps and support score': kaedehara_kazuha_reaction_dps_and_support_score,
-           'wanderer dps score': wanderer_dps_score,
-           'xianyun support score': xianyun_support_score,
-           'chasca dps score': chasca_dps_score,
-           'yumemizuki mizuki reaction dps score': yumemizuki_mizuki_reaction_dps_score,
-           'ningguang dps score': ningguang_dps_score,
-           'noelle dps score': noelle_dps_score,
-           'noelle driver score': noelle_driver_score,
-           'gorou support score': gorou_support_score,
-           'yun jin support score': yun_jin_support_score,
-           'kachina support and offField dps score': kachina_support_and_offField_dps_score,
-           'geo traveler geo dps score': geo_traveler_geo_dps_score,
-           'zhongli shield support score': zhongli_shield_support_score,
-           'zhongli burst support score': zhongli_burst_support_score,
-           'albedo offField dps score': albedo_offField_dps_score,
-           'arataki itto dps score': arataki_itto_dps_score,
-           'navia dps score': navia_dps_score,
-           'chiori offField dps score': chiori_offField_dps_score,
-           'xilonen support score': xilonen_support_score,
-           'collei support score': collei_support_score,
-           'yaoyao support score': yaoyao_support_score,
-           'kaveh bloom burgeon driver score': kaveh_bloom_burgeon_driver_score,
-           'kirara shield support score': kirara_shield_support_score,
-           'dendro traveler support score': dendro_traveler_support_score,
-           'tighnari quick swap dps score': tighnari_quick_swap_dps_score,
-           'nahida dps and support score': nahida_dps_and_support_score,
-           'alhaitham spread dps score': alhaitham_spread_dps_score,
-           'baizhu support score': baizhu_support_score,
-           'emilie offField dps score': emilie_offField_dps_score,
-           'kinich dps score': kinich_dps_score,
-           'lauma buff support high energy score': lauma_buff_support_high_energy_score,
-           'lauma buff support low energy score': lauma_buff_support_low_energy_score,
+            'amber buff support score': amber_buff_support_score,
+            'xiangling offField dps score': xiangling_offField_dps_score,
+            'bennett dps score': bennett_dps_score,
+            'bennett support score': bennett_support_score,
+            'xinyan physical dps score': xinyan_physical_dps_score,
+            'xinyan pyro dps score': xinyan_pyro_dps_score,
+            'xinyan shield support score': xinyan_shield_support_score,
+            'yanfei vaporize dps score': yanfei_vaporize_dps_score,
+            'yanfei shield support score': yanfei_shield_support_score,
+            'thoma burgeon score': thoma_burgeon_score,
+            'thoma shield support score': thoma_shield_support_score,
+            'chevreuse buff support score': chevreuse_buff_support_score,
+            'chevreuse buff support and damage score': chevreuse_buff_support_and_damage_score,
+            'gaming dps score': gaming_dps_score,
+            'pyro traveler buff support score': pyro_traveler_buff_support_score,
+            'pyro traveler dps score': pyro_traveler_dps_score,
+            'diluc dps score': diluc_dps_score,
+            'klee dps score': klee_dps_score,
+            'hu tao dps score': hu_tao_dps_score,
+            'yoimiya dps score': yoimiya_dps_score,
+            'dehya onField dps score': dehya_onField_dps_score,
+            'dehya support score': dehya_support_score,
+            'dehya reaction dps score': dehya_reaction_dps_score,
+            'lyney dps score': lyney_dps_score,
+            'arlecchino dps score': arlecchino_dps_score,
+            'mavuika dps and buff support score': mavuika_dps_and_buff_support_score,
+            'durin vaporize melt offField dps score': durin_vaporize_melt_offField_dps_score,
+            'durin buff support and offField dps score': durin_buff_support_and_offField_dps_score,
+            'fischl offField dps score': fischl_offField_dps_score,
+            'fischl offField aggravate dps score': fischl_offField_aggravate_dps_score,
+            'beidou offField dps score': beidou_offField_dps_score,
+            'lisa aggravate dps score': lisa_aggravate_dps_score,
+            'lisa offField dps score': lisa_offField_dps_score,
+            'lisa reaction dps score': lisa_reaction_dps_score,
+            'razor hyperbloom reaction dps score': razor_hyperbloom_reaction_dps_score,
+            'razor physical dps score': razor_physical_dps_score,
+            'kujou sara buff support and damage score': kujou_sara_buff_support_and_damage_score,
+            'kuki shinobu hyperbloom score': kuki_shinobu_hyperbloom_score,
+            'kuki shinobu aggravate offField dps score': kuki_shinobu_aggravate_offField_dps_score,
+            'kuki shinobu support score': kuki_shinobu_support_score,
+            'dori support score': dori_support_score,
+            'sethos dps score': sethos_dps_score,
+            'ororon offField dps score': ororon_offField_dps_score,
+            'iansan buff support score': iansan_buff_support_score,
+            'electro traveler support score': electro_traveler_support_score,
+            'keqing aggravate dps score': keqing_aggravate_dps_score,
+            'keqing quickbloom dps score': keqing_quickbloom_dps_score,
+            'raiden shogun hyperbloom score': raiden_shogun_hyperbloom_score,
+            'raiden shogun dps score': raiden_shogun_dps_score,
+            'yae miko offField dps score': yae_miko_offField_dps_score,
+            'yae miko offField aggravate dps score': yae_miko_offField_aggravate_dps_score,
+            'cyno quickbloom hyperbloom dps score': cyno_quickbloom_hyperbloom_dps_score,
+            'cyno aggravate dps score': cyno_aggravate_dps_score,
+            'clorinde dps score': clorinde_dps_score,
+            'varesa dps score': varesa_dps_score,
+            'ineffa offField dps support score': ineffa_offField_dps_support_score,
+            'flins dps score': flins_dps_score,
+            'xingqiu offField dps score': xingqiu_offField_dps_score,
+            'barbara support score': barbara_support_score,
+            'barbara bloom dps score': barbara_bloom_dps_score,
+            'candace support score': candace_support_score,
+            'dahlia shield support score': dahlia_shield_support_score,
+            "aino application support score": aino_application_support_score,
+            'hydro traveler support score': hydro_traveler_support_score,
+            'hydro traveler onField dps': hydro_traveler_onField_dps_score,
+            'tartaglia dps score': tartaglia_dps_score,
+            'mona dps score': mona_dps_score,
+            'mona nuke score': mona_nuke_score,
+            'mona burst support score': mona_burst_support_score,
+            'sangonomiya kokomi support score': sangonomiya_kokomi_support_score,
+            'sangonomiya kokomi dps score': sangonomiya_kokomi_dps_score,
+            'sangonomiya kokomi bloom dps score': sangonomiya_kokomi_bloom_dps_score,
+            'kamisato ayato dps score': kamisato_ayato_dps_score,
+            'yelan offField dps score': yelan_offField_dps_score,
+            'nilou bloom support score': nilou_bloom_support_score,
+            'neuvillette dps score': neuvillette_dps_score,
+            'furina offField dps score': furina_offField_dps_score,
+            'sigewinne support score': sigewinne_support_score,
+            'mualani vaporize dps score': mualani_vaporize_dps_score,
+            'diona support score': diona_support_score,
+            'chongyun burst nuke score': chongyun_burst_nuke_score,
+            'chongyun infusion support score': chongyun_infusion_support_score,
+            'kaeya freeze score': kaeya_freeze_score,
+            'kaeya reverse melt score': kaeya_reverse_melt_score,
+            'rosaria reverse melt score': rosaria_reverse_melt_score,
+            'rosaria freeze score': rosaria_freeze_score,
+            'rosaria support score': rosaria_support_score,
+            'layla support score': layla_support_score,
+            'layla support and damage score': layla_support_and_damage_score,
+            'mika support score': mika_support_score,
+            'freminet physical dps score': freminet_physical_dps_score,
+            'freminet cryo dps score': freminet_cryo_dps_score,
+            'charlotte support score': charlotte_support_score,
+            'qiqi support score': qiqi_support_score,
+            'ganyu melt dps score': ganyu_melt_dps_score,
+            'ganyu freeze dps score': ganyu_freeze_dps_score,
+            'ganyu mono cryo dps score': ganyu_mono_cryo_dps_score,
+            'eula dps score': eula_dps_score,
+            'kamisato ayaka dps score': kamisato_ayaka_dps_score,
+            'aloy burst support score': aloy_burst_support_score,
+            'shenhe support score': shenhe_support_score,
+            'wriothesley melt dps score': wriothesley_melt_dps_score,
+            'wriothesley mono cryo freeze dps score': wriothesley_mono_cryo_freeze_dps_score,
+            'citlali support score': citlali_support_score,
+            'escoffier offField dps score': escoffier_offField_dps_score,
+            'skirk dps score': skirk_dps_score,
+            'sucrose em support score': sucrose_em_support_score,
+            'sayu support score': sayu_support_score,
+            'shikanoin heizou anemo dps score': shikanoin_heizou_anemo_dps_score,
+            'shikanoin heizou reaction dps score': shikanoin_heizou_reaction_dps_score,
+            'faruzan support score': faruzan_support_score,
+            'lynette offField dps score': lynette_offField_dps_score,
+            'lan yan support score': lan_yan_support_score,
+            'lan yan driver score': lan_yan_driver_score,
+            'ifa reaction dps score': ifa_reaction_dps_score,
+            'ifa anemo dps score': ifa_anemo_dps_score,
+            'jahoda offField reaction dps and heal support score': jahoda_offField_reaction_dps_and_heal_support_score,
+            'anemo traveler anemo dps score': anemo_traveler_anemo_dps_score,
+            'jean support and damage score': jean_support_and_damage_score,
+            'jean reaction dps score': jean_reaction_dps_score,
+            'venti reaction offField dps score': venti_reaction_offField_dps_score,
+            'venti anemo offField dps score': venti_anemo_offField_dps_score,
+            'xiao dps score': xiao_dps_score,
+            'kaedehara kazuha reaction dps and support score': kaedehara_kazuha_reaction_dps_and_support_score,
+            'wanderer dps score': wanderer_dps_score,
+            'xianyun support score': xianyun_support_score,
+            'chasca dps score': chasca_dps_score,
+            'yumemizuki mizuki reaction dps score': yumemizuki_mizuki_reaction_dps_score,
+            'ningguang dps score': ningguang_dps_score,
+            'noelle dps score': noelle_dps_score,
+            'noelle driver score': noelle_driver_score,
+            'gorou support score': gorou_support_score,
+            'yun jin support score': yun_jin_support_score,
+            'kachina support and offField dps score': kachina_support_and_offField_dps_score,
+            'geo traveler geo dps score': geo_traveler_geo_dps_score,
+            'zhongli shield support score': zhongli_shield_support_score,
+            'zhongli burst support score': zhongli_burst_support_score,
+            'albedo offField dps score': albedo_offField_dps_score,
+            'arataki itto dps score': arataki_itto_dps_score,
+            'navia dps score': navia_dps_score,
+            'chiori offField dps score': chiori_offField_dps_score,
+            'xilonen support score': xilonen_support_score,
+            'collei support score': collei_support_score,
+            'yaoyao support score': yaoyao_support_score,
+            'kaveh bloom burgeon driver score': kaveh_bloom_burgeon_driver_score,
+            'kirara shield support score': kirara_shield_support_score,
+            'dendro traveler support score': dendro_traveler_support_score,
+            'tighnari quick swap dps score': tighnari_quick_swap_dps_score,
+            'nahida dps and support score': nahida_dps_and_support_score,
+            'alhaitham spread dps score': alhaitham_spread_dps_score,
+            'baizhu support score': baizhu_support_score,
+            'emilie offField dps score': emilie_offField_dps_score,
+            'kinich dps score': kinich_dps_score,
+            'lauma buff support high energy score': lauma_buff_support_high_energy_score,
+            'lauma buff support low energy score': lauma_buff_support_low_energy_score,
+            'nefer dps score': nefer_dps_score,
         }
         # Merge substat data into row
         row.update(sub_data)
