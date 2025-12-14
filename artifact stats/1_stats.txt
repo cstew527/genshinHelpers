@@ -1,0 +1,6 @@
+Sands - eleMas
+Goblet - eleMas
+Circlet - eleMas / critRate_* / critDMG_*
+1. enerRech_*
+2. eleMas
+3. critRate_ / critDMG_
