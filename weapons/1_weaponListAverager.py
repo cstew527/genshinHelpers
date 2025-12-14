@@ -2,14 +2,15 @@ from collections import defaultdict
 from statistics import mean
 
 weapon_data = """
-1. KagurasVerity, LostPrayerToTheSacredWinds
-2. SurfsUp
-3. TomeOfTheEternalFlow, CashflowSupervision
-4. SkywardAtlas
-5. MemoryOfDust, TulaytullahsRemembrance, TheWidsith
-6. SolarPearl, CranesEchoingCall
-7. FlowingPurity
-8. DodocoTales
+1. VividNotions
+2. ReliquaryOfTruth
+3. TomeOfTheEternalFlow, SurfsUp!
+4. KagurasVerity
+5. LostPrayerToTheSacredWinds, CashflowSupervision
+6. CranesEchoingCall
+7. TulaytullahsRemembrance
+8. TheWidsith, SacrificialJade
+9. FlowingPurity
 """
 
 weapon_list = []
