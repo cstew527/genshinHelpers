@@ -190,7 +190,8 @@ weapon_map = {
     "Sturdy Bone": "SturdyBone",
     "Summit Shaper": "SummitShaper",
     "Sunny Morning Sleep-In": "SunnyMorningSleepIn",
-    "Surf's Up": "SurfsUp",
+    "Surf's Up!": "SurfsUp",
+        "Surf's Up": "SurfsUp",
         "SurfsUp!": "SurfsUp",
     "Sword of Descension": "SwordOfDescension",
     "Sword of Narzissenkreuz": "SwordOfNarzissenkreuz",
@@ -244,9 +245,22 @@ weapon_map = {
 
 
 def replace_weapons(text):
+    # Sort by length descending to prevent partial replacements of longer phrases
     sorted_keys = sorted(weapon_map.keys(), key=lambda k: -len(k))
+
     for key in sorted_keys:
-        pattern = r'\b{}\b'.format(re.escape(key))
+        escaped_key = re.escape(key)
+
+        # Check if key starts/ends with a word character (alphanumeric + underscore)
+        # We use lookahead/lookbehind or simple string checks.
+        # Using regex checks is safest to align with \w definition.
+
+        start_boundary = r'\b' if re.match(r'^\w', key) else ''
+        end_boundary = r'\b' if re.search(r'\w$', key) else ''
+
+        # Construct pattern only using boundaries where appropriate
+        pattern = r'{}{}{}'.format(start_boundary, escaped_key, end_boundary)
+
         text = re.sub(pattern, weapon_map[key], text)
     return text
 

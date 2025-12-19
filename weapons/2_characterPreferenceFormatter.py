@@ -1,14 +1,21 @@
 # Original list
 data = """
-TheFirstGreatMagic: 1.00
-AstralVulturesCrimsonPlumage: 1.00
-AquaSimulacra: 2.00
-ThunderingPulse: 3.00
-SkywardHarp: 4.00
-AmosBow: 5.00
-PolarStar: 6.00
-SongOfStillness: 6.00
-PrototypeCrescent: 6.00
+VividNotions: 1.00
+ReliquaryOfTruth: 2.00
+KagurasVerity: 3.00
+LostPrayerToTheSacredWinds: 4.00
+CranesEchoingCall: 5.00
+TomeOfTheEternalFlow: 6.00
+SurfsUp: 6.00
+CashflowSupervision: 6.00
+TulaytullahsRemembrance: 7.00
+TheWidsith: 8.00
+SkywardAtlas: 8.00
+SacrificialJade: 9.00
+SolarPearl: 10.00
+BlackcliffAgate: 10.00
+DawningFrost: 10.00
+FlowingPurity: 10.00
 """
 
 # Process the data
