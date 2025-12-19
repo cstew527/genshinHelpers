@@ -276,7 +276,7 @@ if __name__ == "__main__":
     # Test Case
     test_artifact = {
         'level': 0,
-        'rarity': 4,
+        'rarity': 5,
         'slotKey': 'plume',
         'mainStatKey': 'atk',
         'substats': [

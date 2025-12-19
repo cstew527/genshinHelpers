@@ -168,7 +168,7 @@ noelle_dps = {"main_stats": {"sands": {"def_": 1, "atk_": 1}, "goblet": {"geo_dm
 noelle_driver = {"main_stats": {"sands": {"def_": 1}, "goblet": {"geo_dmg_": 1, "def_": 1}, "circlet": {"critRate_": 1, "critDMG_": 1, "def_": 1}}, "sub_stats": {"hp": 0, "hp_": 0, "def": 0.175, "def_": 0.8, "atk": 0, "atk_": 0, "enerRech_": 0.9, "eleMas": 0, "critRate_": 1.0, "critDMG_": 1.0}}
 gorou_support = {"main_stats": {"sands": {"enerRech_": 1}, "goblet": {"geo_dmg_": 1, "def_": 1}, "circlet": {"critRate_": 1, "def_": 1, "heal_": 1}}, "sub_stats": {"hp": 0, "hp_": 0, "def": 0.175, "def_": 0.9, "atk": 0, "atk_": 0, "enerRech_": 1.0, "eleMas": 0, "critRate_": 0.8, "critDMG_": 0}}
 yun_jin_support = {"main_stats": {"sands": {"def_": 1, "enerRech_": 1}, "goblet": {"def_": 1}, "circlet": {"def_": 1, "critRate_": 1}}, "sub_stats": {"hp": 0, "hp_": 0, "def": 0.2, "def_": 1.0, "atk": 0, "atk_": 0, "enerRech_": 0.9, "eleMas": 0, "critRate_": 0.7, "critDMG_": 0}}
-kachina_support_and_offField_dps = {"main_stats": {"sands": {"def_": 1, "enerRech_": 1}, "goblet": {"geo_dmg_": 1, "def_": 1}, "circlet": {"critRate_": 1, "critDMG_": 1}}, "sub_stats": {"hp": 0, "hp_": 0, "def": 0.175, "def_": 0.8, "atk": 0, "atk_": 0, "enerRech_": 1.0, "eleMas": 0, "critRate_": 0.9, "critDMG_": 0.9}}
+kachina_buff_and_reaction_support = {'main_stats': {'sands': {'def_': 1, 'enerRech_': 1}, 'goblet': {'geo_dmg_%': 1, 'def_': 1}, 'circlet': {'critRate_': 1, 'critDMG_': 1}}, 'sub_stats': {'hp': 0, 'hp_': 0, 'def': 0.175, 'def_': 0.8, 'atk': 0, 'atk_': 0, 'enerRech_': 1.0, 'eleMas': 0, 'critRate_': 0.9, 'critDMG_': 0.9}}
 # 5 STAR GEO
 geo_traveler_geo_dps = {"main_stats": {"sands": {"atk_": 1}, "goblet": {"geo_dmg_": 1}, "circlet": {"critRate_": 1, "critDMG_": 1}}, "sub_stats": {"hp": 0, "hp_": 0, "def": 0, "def_": 0, "atk": 0.175, "atk_": 0.9, "enerRech_": 0.8, "eleMas": 0, "critRate_": 1.0, "critDMG_": 1.0}}
 zhongli_shield_support = {"main_stats": {"sands": {"hp_": 1}, "goblet": {"hp_": 1}, "circlet": {"hp_": 1, "critRate_": 1}}, "sub_stats": {"hp": 0.225, "hp_": 1.0, "def": 0, "def_": 0, "atk": 0, "atk_": 0, "enerRech_": 0.8, "eleMas": 0, "critRate_": 0, "critDMG_": 0}}
@@ -235,7 +235,7 @@ csv_headers = [
     'sucrose em support score', 'sayu support score', 'shikanoin heizou anemo dps score',
     'shikanoin heizou reaction dps score', 'faruzan support score', 'lynette offField dps score',
     'lan yan support score', 'lan yan driver score', 'ifa reaction dps score', 'ifa anemo dps score',
-    'jahoda offField reaction dps and heal support score'
+    'jahoda offField reaction dps and heal support score',
     # 5 Star Anemo
     'anemo traveler anemo dps score', 'jean support and damage score', 'jean reaction dps score',
     'venti reaction offField dps score', 'venti anemo offField dps score', 'xiao dps score',
@@ -243,7 +243,7 @@ csv_headers = [
     'chasca dps score', 'yumemizuki mizuki reaction dps score',
     # 4 Star Geo
     'ningguang dps score', 'noelle dps score', 'noelle driver score', 'gorou support score', 'yun jin support score',
-    'kachina support and offField dps score',
+    'kachina buff and reaction support score',
     # 5 Star Geo
     'geo traveler geo dps score', 'zhongli shield support score', 'zhongli burst support score',
     'albedo offField dps score', 'arataki itto dps score', 'navia dps score', 'chiori offField dps score',
@@ -433,12 +433,14 @@ with open('artifacts.csv', 'w', newline='') as outputFile:
         xianyun_support_value = sim.calculate_exact_probability(a, xianyun_support)
         chasca_dps_value = sim.calculate_exact_probability(a, chasca_dps)
         yumemizuki_mizuki_reaction_dps_value = sim.calculate_exact_probability(a, yumemizuki_mizuki_reaction_dps)
+        # 4 Star Geo
         ningguang_dps_value = sim.calculate_exact_probability(a, ningguang_dps)
         noelle_dps_value = sim.calculate_exact_probability(a, noelle_dps)
         noelle_driver_value = sim.calculate_exact_probability(a, noelle_driver)
         gorou_support_value = sim.calculate_exact_probability(a, gorou_support)
         yun_jin_support_value = sim.calculate_exact_probability(a, yun_jin_support)
-        kachina_support_and_offField_dps_value = sim.calculate_exact_probability(a, kachina_support_and_offField_dps)
+        kachina_buff_and_reaction_support_value = sim.calculate_exact_probability(a, kachina_buff_and_reaction_support)
+        # 5 Star Geo
         geo_traveler_geo_dps_value = sim.calculate_exact_probability(a, geo_traveler_geo_dps)
         zhongli_shield_support_value = sim.calculate_exact_probability(a, zhongli_shield_support)
         zhongli_burst_support_value = sim.calculate_exact_probability(a, zhongli_burst_support)
@@ -592,12 +594,14 @@ with open('artifacts.csv', 'w', newline='') as outputFile:
         xianyun_support_score = sim.get_probability_greater_than(xianyun_support_value, TARGET_SCORE)
         chasca_dps_score = sim.get_probability_greater_than(chasca_dps_value, TARGET_SCORE)
         yumemizuki_mizuki_reaction_dps_score = sim.get_probability_greater_than(yumemizuki_mizuki_reaction_dps_value, TARGET_SCORE)
+        # 4 Star Geo
         ningguang_dps_score = sim.get_probability_greater_than(ningguang_dps_value, TARGET_SCORE)
         noelle_dps_score = sim.get_probability_greater_than(noelle_dps_value, TARGET_SCORE)
         noelle_driver_score = sim.get_probability_greater_than(noelle_driver_value, TARGET_SCORE)
         gorou_support_score = sim.get_probability_greater_than(gorou_support_value, TARGET_SCORE)
         yun_jin_support_score = sim.get_probability_greater_than(yun_jin_support_value, TARGET_SCORE)
-        kachina_support_and_offField_dps_score = sim.get_probability_greater_than(kachina_support_and_offField_dps_value, TARGET_SCORE)
+        kachina_buff_and_reaction_support_score = sim.get_probability_greater_than(kachina_buff_and_reaction_support_value, TARGET_SCORE)
+        # 5 Star Geo
         geo_traveler_geo_dps_score = sim.get_probability_greater_than(geo_traveler_geo_dps_value, TARGET_SCORE)
         zhongli_shield_support_score = sim.get_probability_greater_than(zhongli_shield_support_value, TARGET_SCORE)
         zhongli_burst_support_score = sim.get_probability_greater_than(zhongli_burst_support_value, TARGET_SCORE)
@@ -678,7 +682,7 @@ with open('artifacts.csv', 'w', newline='') as outputFile:
             'barbara bloom dps score': barbara_bloom_dps_score,
             'candace support score': candace_support_score,
             'dahlia shield support score': dahlia_shield_support_score,
-            "aino application support score": aino_application_support_score,
+            'aino application support score': aino_application_support_score,
             'hydro traveler support score': hydro_traveler_support_score,
             'hydro traveler onField dps': hydro_traveler_onField_dps_score,
             'tartaglia dps score': tartaglia_dps_score,
@@ -744,12 +748,14 @@ with open('artifacts.csv', 'w', newline='') as outputFile:
             'xianyun support score': xianyun_support_score,
             'chasca dps score': chasca_dps_score,
             'yumemizuki mizuki reaction dps score': yumemizuki_mizuki_reaction_dps_score,
+            # 4 Star Geo
             'ningguang dps score': ningguang_dps_score,
             'noelle dps score': noelle_dps_score,
             'noelle driver score': noelle_driver_score,
             'gorou support score': gorou_support_score,
             'yun jin support score': yun_jin_support_score,
-            'kachina support and offField dps score': kachina_support_and_offField_dps_score,
+            'kachina buff and reaction support score': kachina_buff_and_reaction_support_score,
+            # 5 Star Geo
             'geo traveler geo dps score': geo_traveler_geo_dps_score,
             'zhongli shield support score': zhongli_shield_support_score,
             'zhongli burst support score': zhongli_burst_support_score,

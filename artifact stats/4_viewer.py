@@ -87,7 +87,7 @@ def refresh_grid(*args):
 
         best_score = artifact[score_cols].max()
         color = "SystemButtonFace"
-        if best_score < 75:
+        if best_score < 25:
             color = "red"
 
         btn = tk.Button(

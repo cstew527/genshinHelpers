@@ -50,6 +50,7 @@ string_map = {
     "Pyro RES +40% (2)": "15",
     "Pyro DMG Bonus +15% (2)": "16",
         "Crimson Witch of Flames (2)": "16",
+        "Crimson Witch (2)":  "16",
     "Cryo DMG Bonus +15% (2)": "17",
         "Blizzard Strayer (2)": "17",
         "+15% Cryo DMG set (2)": "17",
