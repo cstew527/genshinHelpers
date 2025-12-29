@@ -1,21 +1,19 @@
 # Original list
 data = """
-VividNotions: 1.00
-ReliquaryOfTruth: 2.00
-KagurasVerity: 3.00
-LostPrayerToTheSacredWinds: 4.00
-CranesEchoingCall: 5.00
-TomeOfTheEternalFlow: 6.00
-SurfsUp: 6.00
-CashflowSupervision: 6.00
-TulaytullahsRemembrance: 7.00
-TheWidsith: 8.00
-SkywardAtlas: 8.00
-SacrificialJade: 9.00
-SolarPearl: 10.00
-BlackcliffAgate: 10.00
-DawningFrost: 10.00
-FlowingPurity: 10.00
+SerpentSpine: 1.00
+RedhornStonethresher: 1.00
+AThousandBlazingSuns: 1.00
+Verdict: 1.00
+BeaconOfTheReedSea: 2.00
+FruitfulHook: 3.00
+WolfsGravestone: 3.00
+Rainslasher: 3.00
+MailedFlower: 4.00
+LithicBlade: 4.00
+TheUnforged: 4.00
+TidalShadow: 5.00
+UltimateOverlordsMegaMagicSword: 5.00
+MakhairaAquamarine: 5.00
 """
 
 # Process the data

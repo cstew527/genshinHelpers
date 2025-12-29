@@ -2,16 +2,11 @@ from collections import defaultdict
 from statistics import mean
 
 weapon_data = """
-1. VividNotions
-2. ReliquaryOfTruth
-3. KagurasVerity
-4. LostPrayerToTheSacredWinds
-5. CranesEchoingCall
-6. TomeOfTheEternalFlow, SurfsUp, CashflowSupervision
-7. TulaytullahsRemembrance
-8. TheWidsith, SkywardAtlas
-9. SacrificialJade
-10. SolarPearl, BlackcliffAgate, DawningFrost, FlowingPurity
+1. SerpentSpine, RedhornStonethresher, AThousandBlazingSuns, Verdict
+2. BeaconOfTheReedSea
+3. FruitfulHook, WolfsGravestone, Rainslasher
+4. MailedFlower, LithicBlade, TheUnforged
+5. TidalShadow, UltimateOverlordsMegaMagicSword, MakhairaAquamarine
 """
 
 weapon_list = []
