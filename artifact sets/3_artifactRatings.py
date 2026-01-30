@@ -136,7 +136,7 @@ def rank_artifacts(filename="2_artifactsMerged.txt"):
         print(artifact, ":", rating)
 
     comparisons_before_blank_line = [
-        ("A Day Carbed From Rising Winds (4p)", "ATK +18% (2p)"),
+        ("A Day Carved From Rising Winds (4p)", "ATK +18% (2p)"),
         ("Aubade of Morningstar and Moon (4p)", "Elemental Mastery +80 (2p)"),
         ("Silken Moon's Serenade (4p)", "Energy Recharge +20% (2p)"),
         ("Night of the Sky's Unveiling (4p)", "Elemental Mastery +80 (2p)"),
