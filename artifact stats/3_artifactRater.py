@@ -67,7 +67,7 @@ cyno_quickbloom_hyperbloom_dps = {"main_stats": {"sands": {"eleMas": 1}, "goblet
 cyno_aggravate_dps = {"main_stats": {"sands": {"eleMas": 1, "atk_": 1}, "goblet": {"electro_dmg_": 1}, "circlet": {"critRate_": 1, "critDMG_": 1}}, "sub_stats": {"hp": 0, "hp_": 0, "def": 0, "def_": 0, "atk": 0.175, "atk_": 0.8, "enerRech_": 1.0, "eleMas": 0.8, "critRate_": 0.9, "critDMG_": 0.9}}
 clorinde_dps = {"main_stats": {"sands": {"atk_": 1, "eleMas": 1}, "goblet": {"electro_dmg_": 1}, "circlet": {"critRate_": 1, "critDMG_": 1}}, "sub_stats": {"hp": 0, "hp_": 0, "def": 0, "def_": 0, "atk": 0.15, "atk_": 0.9, "enerRech_": 0.7, "eleMas": 0.8, "critRate_": 1.0, "critDMG_": 1.0}}
 varesa_dps = {'main_stats': {'sands': {'atk_': 1}, 'goblet': {'electro_dmg_': 1}, 'circlet': {'critRate_': 1, 'critDMG_': 1}}, 'sub_stats': {'hp': 0, 'hp_': 0, 'def': 0, 'def_': 0, 'atk': 0.175, 'atk_': 0.8, 'enerRech_': 1.0, 'eleMas': 0, 'critRate_': 0.9, 'critDMG_': 0.9}}
-ineffa_offField_dps_support = {"main_stats": {"sands": {"atk_": 1, "enerRech_": 1}, "goblet": {"atk_": 1}, "circlet": {"critRate_": 1, "critDMG_": 1}}, "sub_stats": {"hp": 0, "hp_": 0, "def": 0, "def_": 0, "atk": 0.175, "atk_": 0.8, "enerRech_": 1.0, "eleMas": 0.8, "critRate_": 0.9, "critDMG_": 0.9}}
+ineffa_offField_dps_and_buff_and_shield_support = {'main_stats': {'sands': {'atk_': 1}, 'goblet': {'atk_': 1}, 'circlet': {'critRate_': 1, 'critDMG_': 1}}, 'sub_stats': {'hp': 0, 'hp_': 0, 'def': 0, 'def_': 0, 'atk': 0.175, 'atk_': 0.8, 'enerRech_': 1.0, 'eleMas': 0.8, 'critRate_': 0.9, 'critDMG_': 0.9}}
 flins_dps = {'main_stats': {'sands': {'atk_': 1}, 'goblet': {'atk_': 1}, 'circlet': {'critRate_': 1, 'critDMG_': 1}}, 'sub_stats': {'hp': 0, 'hp_': 0, 'def': 0, 'def_': 0, 'atk': 0.175, 'atk_': 0.8, 'enerRech_': 1.0, 'eleMas': 0.8, 'critRate_': 0.9, 'critDMG_': 0.9}}
 # 4 STAR DENDRO
 collei_support = {"main_stats": {"sands": {"enerRech_": 1, "atk_": 1, "eleMas": 1}, "goblet": {"dendro_dmg_": 1, "eleMas": 1}, "circlet": {"critRate_": 1, "critDMG_": 1, "eleMas": 1}}, "sub_stats": {"hp": 0, "hp_": 0, "def": 0, "def_": 0, "atk": 0.175, "atk_": 0.8, "enerRech_": 1.0, "eleMas": 0.8, "critRate_": 0.9, "critDMG_": 0.9}}
@@ -109,6 +109,7 @@ neuvillette_dps = {"main_stats": {"sands": {"hp_": 1}, "goblet": {"hydro_dmg_": 
 furina_offField_dps = {"main_stats": {"sands": {"enerRech_": 1, "hp_": 1}, "goblet": {"hp_": 1, "hydro_dmg_": 1}, "circlet": {"critRate_": 1, "critDMG_": 1}}, "sub_stats": {"hp": 0.2, "hp_": 0.9, "def": 0, "def_": 0, "atk": 0, "atk_": 0, "enerRech_": 1.0, "eleMas": 0, "critRate_": 0.9, "critDMG_": 0.9}}
 sigewinne_support = {"main_stats": {"sands": {"hp_": 1}, "goblet": {"hp_": 1}, "circlet": {"hp_": 1, "critRate_": 1}}, "sub_stats": {"hp": 0.225, "hp_": 1.0, "def": 0, "def_": 0, "atk": 0, "atk_": 0, "enerRech_": 0, "eleMas": 0, "critRate_": 0.8, "critDMG_": 0}}
 mualani_vaporize_dps = {"main_stats": {"sands": {"hp_": 1, "eleMas": 1}, "goblet": {"hydro_dmg_": 1}, "circlet": {"critRate_": 1, "critDMG_": 1, "hp_": 1, "eleMas": 1}}, "sub_stats": {"hp": 0.2, "hp_": 0.9, "def": 0, "def_": 0, "atk": 0, "atk_": 0, "enerRech_": 0, "eleMas": 0.9, "critRate_": 1.0, "critDMG_": 1.0}}
+columbina_offField_support_and_buff_support = {'main_stats': {'sands': {'hp_': 1, 'enerRech_': 1}, 'goblet': {'hp_': 1}, 'circlet': {'critRate_': 1, 'critDMG_': 1}}, 'sub_stats': {'hp': 0.15, 'hp_': 0.8, 'def': 0, 'def_': 0, 'atk': 0, 'atk_': 0, 'enerRech_': 1.0, 'eleMas': 0.7, 'critRate_': 0.9, 'critDMG_': 0.9}}
 # 4 STAR CRYO
 diona_support = {"main_stats": {"sands": {"enerRech_": 1, "hp_": 1}, "goblet": {"hp_": 1}, "circlet": {"hp_": 1, "heal_": 1}}, "sub_stats": {"hp": 0.175, "hp_": 0.9, "def": 0, "def_": 0, "atk": 0, "atk_": 0, "enerRech_": 1.0, "eleMas": 0, "critRate_": 0.8, "critDMG_": 0}}
 chongyun_burst_nuke = {"main_stats": {"sands": {"atk_": 1, "enerRech_": 1, "eleMas": 1}, "goblet": {"cryo_dmg_": 1}, "circlet": {"critRate_": 1, "critDMG_": 1}}, "sub_stats": {"hp": 0, "hp_": 0, "def": 0, "def_": 0, "atk": 0.15, "atk_": 0.9, "enerRech_": 0.7, "eleMas": 0.8, "critRate_": 1.0, "critDMG_": 1.0}}
@@ -173,7 +174,7 @@ kachina_buff_and_reaction_support = {'main_stats': {'sands': {'def_': 1, 'enerRe
 geo_traveler_geo_dps = {"main_stats": {"sands": {"atk_": 1}, "goblet": {"geo_dmg_": 1}, "circlet": {"critRate_": 1, "critDMG_": 1}}, "sub_stats": {"hp": 0, "hp_": 0, "def": 0, "def_": 0, "atk": 0.175, "atk_": 0.9, "enerRech_": 0.8, "eleMas": 0, "critRate_": 1.0, "critDMG_": 1.0}}
 zhongli_shield_support = {"main_stats": {"sands": {"hp_": 1}, "goblet": {"hp_": 1}, "circlet": {"hp_": 1, "critRate_": 1}}, "sub_stats": {"hp": 0.225, "hp_": 1.0, "def": 0, "def_": 0, "atk": 0, "atk_": 0, "enerRech_": 0.8, "eleMas": 0, "critRate_": 0, "critDMG_": 0}}
 zhongli_burst_support = {"main_stats": {"sands": {"atk_": 1, "hp_": 1}, "goblet": {"geo_dmg_": 1}, "circlet": {"critRate_": 1, "critDMG_": 1}}, "sub_stats": {"hp": 0.125, "hp_": 0.8, "def": 0, "def_": 0, "atk": 0.15, "atk_": 0.9, "enerRech_": 0.7, "eleMas": 0, "critRate_": 1.0, "critDMG_": 1.0}}
-albedo_offField_dps = {"main_stats": {"sands": {"def_": 1}, "goblet": {"geo_dmg_": 1, "def_": 1}, "circlet": {"critRate_": 1, "critDMG_": 1, "def_": 1}}, "sub_stats": {"hp": 0, "hp_": 0, "def": 0.15, "def_": 0.9, "atk": 0.125, "atk_": 0.8, "enerRech_": 0.7, "eleMas": 0, "critRate_": 1.0, "critDMG_": 1.0}}
+albedo_offField_dps = {'main_stats': {'sands': {'def_': 1}, 'goblet': {'geo_dmg_': 1, 'def_': 1}, 'circlet': {'critRate_': 1, 'critDMG_': 1}}, 'sub_stats': {'hp': 0, 'hp_': 0, 'def': 0.15, 'def_': 0.9, 'atk': 0.125, 'atk_': 0.7, 'enerRech_': 0.8, 'eleMas': 0, 'critRate_': 1.0, 'critDMG_': 1.0}}
 arataki_itto_dps = {"main_stats": {"sands": {"def_": 1}, "goblet": {"geo_dmg_": 1}, "circlet": {"critRate_": 1, "critDMG_": 1}}, "sub_stats": {"hp": 0, "hp_": 0, "def": 0.15, "def_": 0.8, "atk": 0.125, "atk_": 0.7, "enerRech_": 1.0, "eleMas": 0, "critRate_": 0.9, "critDMG_": 0.9}}
 navia_dps = {"main_stats": {"sands": {"atk_": 1, "enerRech_": 1}, "goblet": {"geo_dmg_": 1}, "circlet": {"critRate_": 1, "critDMG_": 1}}, "sub_stats": {"hp": 0, "hp_": 0, "def": 0, "def_": 0, "atk": 0.175, "atk_": 0.8, "enerRech_": 1.0, "eleMas": 0, "critRate_": 0.9, "critDMG_": 0.9}}
 chiori_offField_dps = {"main_stats": {"sands": {"def_": 1}, "goblet": {"geo_dmg_": 1}, "circlet": {"critRate_": 1, "critDMG_": 1}}, "sub_stats": {"hp": 0, "hp_": 0, "def": 0.175, "def_": 0.9, "atk": 0.15, "atk_": 0.8, "enerRech_": 0.5, "eleMas": 0, "critRate_": 1.0, "critDMG_": 1.0}}
@@ -211,7 +212,7 @@ csv_headers = [
     'electro traveler support score', 'keqing aggravate dps score', 'keqing quickbloom dps score',
     'raiden shogun hyperbloom score', 'raiden shogun dps score', 'yae miko offField dps score',
     'yae miko offField aggravate dps score', 'cyno quickbloom hyperbloom dps score', 'cyno aggravate dps score',
-    'clorinde dps score', 'varesa dps score', 'ineffa offField dps support score', 'flins dps score',
+    'clorinde dps score', 'varesa dps score', 'ineffa offField dps and buff and shield support score', 'flins dps score',
     # 4 Star Hydro
     'xingqiu offField dps score', 'barbara support score', 'barbara bloom dps score', 'candace support score',
     'dahlia shield support score', 'aino application support score',
@@ -220,7 +221,7 @@ csv_headers = [
     'mona nuke score', 'mona burst support score', 'sangonomiya kokomi support score', 'sangonomiya kokomi dps score',
     'sangonomiya kokomi bloom dps score', 'kamisato ayato dps score', 'yelan offField dps score',
     'nilou bloom support score', 'neuvillette dps score', 'furina offField dps score', 'sigewinne support score',
-    'mualani vaporize dps score',
+    'mualani vaporize dps score', 'columbina offField support and buff support score',
     # 4 Star Cryo
     'diona support score', 'chongyun burst nuke score', 'chongyun infusion support score', 'kaeya freeze score',
     'kaeya reverse melt score', 'rosaria reverse melt score', 'rosaria freeze score', 'rosaria support score',
@@ -342,7 +343,7 @@ with open('artifacts.csv', 'w', newline='') as outputFile:
         cyno_aggravate_dps_value = sim.calculate_exact_probability(a, cyno_aggravate_dps)
         clorinde_dps_value = sim.calculate_exact_probability(a, clorinde_dps)
         varesa_dps_value = sim.calculate_exact_probability(a, varesa_dps)
-        ineffa_offField_dps_support_value = sim.calculate_exact_probability(a, ineffa_offField_dps_support)
+        ineffa_offField_dps_and_buff_and_shield_support_value = sim.calculate_exact_probability(a, ineffa_offField_dps_and_buff_and_shield_support)
         flins_dps_value = sim.calculate_exact_probability(a, flins_dps)
         # 4 Star Dendro
         collei_support_value = sim.calculate_exact_probability(a, collei_support)
@@ -384,6 +385,8 @@ with open('artifacts.csv', 'w', newline='') as outputFile:
         furina_offField_dps_value = sim.calculate_exact_probability(a, furina_offField_dps)
         sigewinne_support_value = sim.calculate_exact_probability(a, sigewinne_support)
         mualani_vaporize_dps_value = sim.calculate_exact_probability(a, mualani_vaporize_dps)
+        columbina_offField_support_and_buff_support_value = sim.calculate_exact_probability(a, columbina_offField_support_and_buff_support)
+        # 4 Star Cryo
         diona_support_value = sim.calculate_exact_probability(a, diona_support)
         chongyun_burst_nuke_value = sim.calculate_exact_probability(a, chongyun_burst_nuke)
         chongyun_infusion_support_value = sim.calculate_exact_probability(a, chongyun_infusion_support)
@@ -506,7 +509,7 @@ with open('artifacts.csv', 'w', newline='') as outputFile:
         cyno_aggravate_dps_score = sim.get_probability_greater_than(cyno_aggravate_dps_value, TARGET_SCORE)
         clorinde_dps_score = sim.get_probability_greater_than(clorinde_dps_value, TARGET_SCORE)
         varesa_dps_score = sim.get_probability_greater_than(varesa_dps_value, TARGET_SCORE)
-        ineffa_offField_dps_support_score = sim.get_probability_greater_than(ineffa_offField_dps_support_value, TARGET_SCORE)
+        ineffa_offField_dps_and_buff_and_shield_support_score = sim.get_probability_greater_than(ineffa_offField_dps_and_buff_and_shield_support_value, TARGET_SCORE)
         flins_dps_score = sim.get_probability_greater_than(flins_dps_value, TARGET_SCORE)
         collei_support_score = sim.get_probability_greater_than(collei_support_value, TARGET_SCORE)
         yaoyao_support_score = sim.get_probability_greater_than(yaoyao_support_value, TARGET_SCORE)
@@ -544,6 +547,7 @@ with open('artifacts.csv', 'w', newline='') as outputFile:
         furina_offField_dps_score = sim.get_probability_greater_than(furina_offField_dps_value, TARGET_SCORE)
         sigewinne_support_score = sim.get_probability_greater_than(sigewinne_support_value, TARGET_SCORE)
         mualani_vaporize_dps_score = sim.get_probability_greater_than(mualani_vaporize_dps_value, TARGET_SCORE)
+        columbina_offField_support_and_buff_support_score = sim.get_probability_greater_than(columbina_offField_support_and_buff_support_value, TARGET_SCORE)
         diona_support_score = sim.get_probability_greater_than(diona_support_value, TARGET_SCORE)
         chongyun_burst_nuke_score = sim.get_probability_greater_than(chongyun_burst_nuke_value, TARGET_SCORE)
         chongyun_infusion_support_score = sim.get_probability_greater_than(chongyun_infusion_support_value, TARGET_SCORE)
@@ -675,7 +679,7 @@ with open('artifacts.csv', 'w', newline='') as outputFile:
             'cyno aggravate dps score': cyno_aggravate_dps_score,
             'clorinde dps score': clorinde_dps_score,
             'varesa dps score': varesa_dps_score,
-            'ineffa offField dps support score': ineffa_offField_dps_support_score,
+            'ineffa offField dps and buff and shield support score': ineffa_offField_dps_and_buff_and_shield_support_score,
             'flins dps score': flins_dps_score,
             'xingqiu offField dps score': xingqiu_offField_dps_score,
             'barbara support score': barbara_support_score,
@@ -699,6 +703,7 @@ with open('artifacts.csv', 'w', newline='') as outputFile:
             'furina offField dps score': furina_offField_dps_score,
             'sigewinne support score': sigewinne_support_score,
             'mualani vaporize dps score': mualani_vaporize_dps_score,
+            'columbina offField support and buff support score': columbina_offField_support_and_buff_support_score,
             'diona support score': diona_support_score,
             'chongyun burst nuke score': chongyun_burst_nuke_score,
             'chongyun infusion support score': chongyun_infusion_support_score,
