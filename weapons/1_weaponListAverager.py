@@ -2,11 +2,10 @@ from collections import defaultdict
 from statistics import mean
 
 weapon_data = """
-1. SerpentSpine, RedhornStonethresher, AThousandBlazingSuns, Verdict
-2. BeaconOfTheReedSea
-3. FruitfulHook, WolfsGravestone, Rainslasher
-4. MailedFlower, LithicBlade, TheUnforged
-5. TidalShadow, UltimateOverlordsMegaMagicSword, MakhairaAquamarine
+1. FavoniusWarbow
+2. SnareHook
+3. SacrificialBow
+4. ElegyForTheEnd
 """
 
 weapon_list = []
