@@ -2,10 +2,10 @@ from collections import defaultdict
 from statistics import mean
 
 weapon_data = """
-1. FavoniusWarbow
-2. SnareHook
-3. SacrificialBow
-4. ElegyForTheEnd
+1. FavoniusLance
+2. DragonsBane
+3. KitainCrossSpear
+4. EngulfingLightning
 """
 
 weapon_list = []

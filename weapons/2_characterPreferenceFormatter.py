@@ -1,9 +1,9 @@
 # Original list
 data = """
-FavoniusWarbow: 1.00
-SnareHook: 2.00
-SacrificialBow: 3.00
-ElegyForTheEnd: 4.00
+FavoniusLance: 1.00
+DragonsBane: 2.00
+KitainCrossSpear: 3.00
+EngulfingLightning: 4.00
 """
 
 # Process the data

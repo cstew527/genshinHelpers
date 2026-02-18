@@ -1,7 +1,6 @@
-Sands - enerRech_
-Goblet - geo_dmg_ / def_*
-Circlet - critRate_ / def_* / heal_*
-1. enerRech_
-2. def_*
-3. critRate_*
-4. flat_def
+Sands - eleMas / enerRech_
+Goblet - eleMas
+Circlet - eleMas
+1. enerRech_*
+2. eleMas
+3. critRate_

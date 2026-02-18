@@ -170,6 +170,7 @@ noelle_driver = {"main_stats": {"sands": {"def_": 1}, "goblet": {"geo_dmg_": 1, 
 gorou_support = {'main_stats': {'sands': {'enerRech_': 1}, 'goblet': {'geo_dmg_': 1, 'def_': 1}, 'circlet': {'critRate_': 1, 'def_': 1, 'heal_': 1}}, 'sub_stats': {'hp': 0, 'hp_': 0, 'def': 0.175, 'def_': 0.9, 'atk': 0, 'atk_': 0, 'enerRech_': 1.0, 'eleMas': 0, 'critRate_': 0.8, 'critDMG_': 0}}
 yun_jin_support = {"main_stats": {"sands": {"def_": 1, "enerRech_": 1}, "goblet": {"def_": 1}, "circlet": {"def_": 1, "critRate_": 1}}, "sub_stats": {"hp": 0, "hp_": 0, "def": 0.2, "def_": 1.0, "atk": 0, "atk_": 0, "enerRech_": 0.9, "eleMas": 0, "critRate_": 0.7, "critDMG_": 0}}
 kachina_buff_and_reaction_support = {'main_stats': {'sands': {'def_': 1, 'enerRech_': 1}, 'goblet': {'geo_dmg_%': 1, 'def_': 1}, 'circlet': {'critRate_': 1, 'critDMG_': 1}}, 'sub_stats': {'hp': 0, 'hp_': 0, 'def': 0.175, 'def_': 0.8, 'atk': 0, 'atk_': 0, 'enerRech_': 1.0, 'eleMas': 0, 'critRate_': 0.9, 'critDMG_': 0.9}}
+illuga_buff_support = {'main_stats': {'sands': {'eleMas': 1, 'enerRech_': 1}, 'goblet': {'eleMas': 1}, 'circlet': {'eleMas': 1}}, 'sub_stats': {'hp': 0, 'hp_': 0, 'def': 0, 'def_': 0, 'atk': 0, 'atk_': 0, 'enerRech_': 1.0, 'eleMas': 0.9, 'critRate_': 0.8, 'critDMG_': 0}}
 # 5 STAR GEO
 geo_traveler_geo_dps = {"main_stats": {"sands": {"atk_": 1}, "goblet": {"geo_dmg_": 1}, "circlet": {"critRate_": 1, "critDMG_": 1}}, "sub_stats": {"hp": 0, "hp_": 0, "def": 0, "def_": 0, "atk": 0.175, "atk_": 0.9, "enerRech_": 0.8, "eleMas": 0, "critRate_": 1.0, "critDMG_": 1.0}}
 zhongli_shield_support = {"main_stats": {"sands": {"hp_": 1}, "goblet": {"hp_": 1}, "circlet": {"hp_": 1, "critRate_": 1}}, "sub_stats": {"hp": 0.225, "hp_": 1.0, "def": 0, "def_": 0, "atk": 0, "atk_": 0, "enerRech_": 0.8, "eleMas": 0, "critRate_": 0, "critDMG_": 0}}
@@ -244,7 +245,7 @@ csv_headers = [
     'chasca dps score', 'yumemizuki mizuki reaction dps score',
     # 4 Star Geo
     'ningguang dps score', 'noelle dps score', 'noelle driver score', 'gorou support score', 'yun jin support score',
-    'kachina buff and reaction support score',
+    'kachina buff and reaction support score', 'illuga buff support score',
     # 5 Star Geo
     'geo traveler geo dps score', 'zhongli shield support score', 'zhongli burst support score',
     'albedo offField dps score', 'arataki itto dps score', 'navia dps score', 'chiori offField dps score',
@@ -443,6 +444,7 @@ with open('artifacts.csv', 'w', newline='') as outputFile:
         gorou_support_value = sim.calculate_exact_probability(a, gorou_support)
         yun_jin_support_value = sim.calculate_exact_probability(a, yun_jin_support)
         kachina_buff_and_reaction_support_value = sim.calculate_exact_probability(a, kachina_buff_and_reaction_support)
+        illuga_buff_support_value = sim.calculate_exact_probability(a, illuga_buff_support)
         # 5 Star Geo
         geo_traveler_geo_dps_value = sim.calculate_exact_probability(a, geo_traveler_geo_dps)
         zhongli_shield_support_value = sim.calculate_exact_probability(a, zhongli_shield_support)
@@ -605,6 +607,7 @@ with open('artifacts.csv', 'w', newline='') as outputFile:
         gorou_support_score = sim.get_probability_greater_than(gorou_support_value, TARGET_SCORE)
         yun_jin_support_score = sim.get_probability_greater_than(yun_jin_support_value, TARGET_SCORE)
         kachina_buff_and_reaction_support_score = sim.get_probability_greater_than(kachina_buff_and_reaction_support_value, TARGET_SCORE)
+        illuga_buff_support_score = sim.get_probability_greater_than(illuga_buff_support_value, TARGET_SCORE)
         # 5 Star Geo
         geo_traveler_geo_dps_score = sim.get_probability_greater_than(geo_traveler_geo_dps_value, TARGET_SCORE)
         zhongli_shield_support_score = sim.get_probability_greater_than(zhongli_shield_support_value, TARGET_SCORE)
@@ -760,6 +763,7 @@ with open('artifacts.csv', 'w', newline='') as outputFile:
             'gorou support score': gorou_support_score,
             'yun jin support score': yun_jin_support_score,
             'kachina buff and reaction support score': kachina_buff_and_reaction_support_score,
+            'illuga buff support score': illuga_buff_support_score,
             # 5 Star Geo
             'geo traveler geo dps score': geo_traveler_geo_dps_score,
             'zhongli shield support score': zhongli_shield_support_score,
