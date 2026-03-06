@@ -77,6 +77,7 @@ string_map = {
         "Silken Moon's Serenade (2)": "20",
     "DEF +30% (2)": "21",
         "Husk of Opulent Dreams (2)": "21",
+        "+30% DEF set (2)": "21",
     "Dendro DMG Bonus +15% (2)": "22",
         "Deepwood Memories (2)": "22",
     "Normal/Charged Attack DMG +15% (2)": "23",
