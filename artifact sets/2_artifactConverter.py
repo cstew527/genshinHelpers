@@ -137,6 +137,7 @@ string_map = {
     "Silken Moon's Serenade (4)": "72",
     "Aubade of Morningstar and Moon (4)": "73",
     "A Day Carved From Rising Winds (4)": "74",
+        "A Day Carved from Rising Winds (4)": "74",
     "Resolution of Sojourner (4)": "75",
     "Tiny Miracle (4)": "76",
     "Berserker (4)": "77",
